@@ -36,6 +36,7 @@ public class JpaProducaoConfig {
 	@Bean
 	@Profile("prod")
 	private Properties propriedadesAdicionais() {
+		
 		Properties props = new Properties();
 		props.setProperty("hibernate.default_schema", "mercadoria");
 		props.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
