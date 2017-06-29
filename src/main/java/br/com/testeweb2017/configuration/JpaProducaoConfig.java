@@ -37,7 +37,7 @@ public class JpaProducaoConfig {
 	@Profile("prod")
 	private Properties propriedadesAdicionais() {
 		Properties props = new Properties();
-		//props.setProperty("hibernate.default_schema", "mercadoria");
+		props.setProperty("hibernate.default_schema", "mercadoria");
 		props.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 		props.setProperty("hibernate.show_sql", "true");
 		props.setProperty("hibernate.hbm2ddl.auto", "update");
